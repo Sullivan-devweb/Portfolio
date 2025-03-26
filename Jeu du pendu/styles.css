@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.hangman-drawing {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 24px;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#wordDisplay {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
+
+#message {
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease;
+}
+
+#usedLetters {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.alert-info {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#restartGame {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
